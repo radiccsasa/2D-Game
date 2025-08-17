@@ -62,31 +62,8 @@ public class Player extends Entity{
     {
         if(keyH.upPressed == true || keyH.downPressed== true || keyH.leftPressed==true || keyH.rightPressed==true)
         {
-            if(keyH.upPressed && keyH.leftPressed){
-                direction = "up";
-                worldY -= speed - 1;
-                worldX -= speed - 1;
-            }
 
-            else if(keyH.upPressed && keyH.rightPressed){
-                direction = "up";
-                worldY -= speed - 1;
-                worldX += speed - 1;
-            }
-
-            else if(keyH.downPressed && keyH.rightPressed){
-                direction = "down";
-                worldY += speed - 1;
-                worldX += speed - 1;
-            }
-
-            else if(keyH.downPressed && keyH.leftPressed){
-                direction = "down";
-                worldY += speed - 1;
-                worldX -= speed - 1;
-            }
-
-            else if(keyH.upPressed){
+            if(keyH.upPressed){
                 direction = "up";
             }
             else if(keyH.downPressed){
